@@ -1,8 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a Test Task project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+First, you need to create .env file in root directory if it is not available then otherwise
+update the variable name or make variable and name is :
+NEXT_PUBLIC_API_URL = URL that gives me in the Task
+
+run the development server using any one of below command:
 
 ```bash
 npm run dev
@@ -16,21 +20,37 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+So in that project i am creating folder for reusable component and the Folder name is:-
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1.Container (combination of components and use on the main pages)
+2.Components (for making a reusable component)
+3. hooks (to make hooks by ourself)
 
-## Learn More
+## Component Folder have
 
-To learn more about Next.js, take a look at the following resources:
+1. Footer
+2. Header
+3. Loader
+4. ProductItem
+5. ProductList
+6. SearchBar
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Container Folder have
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. ProductContainer
 
-## Deploy on Vercel
+## Hooks Folder have
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. useDebounceHook
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## utils Folder have
+
+1. api (For Interceptor)
+
+## redux Folder have
+
+1. saga [For Generators]
+2. reducers [for reducers where we have initial state]
+3. types [types of actions]
+4. actions [what action need for manipulate the state]
+5. store is combination of reducers saga [where we can manage state globally]
