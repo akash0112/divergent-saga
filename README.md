@@ -1,6 +1,10 @@
 This is a Test Task project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Vercel Link
+https://divergent-saga.vercel.app/ [you can directly visit here to check the task]
+
 ## Getting Started
+
 
 First, you need to create .env file in root directory if it is not available then otherwise
 update the variable name or make variable and name is :
